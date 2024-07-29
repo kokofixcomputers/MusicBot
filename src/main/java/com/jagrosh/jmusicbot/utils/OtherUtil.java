@@ -171,7 +171,7 @@ public class OtherUtil
         
         if(latestVersion!=null && !latestVersion.equals(version))
         {
-            prompt.alert(Prompt.Level.WARNING, "JMusicBot Version", String.format(NEW_VERSION_AVAILABLE, version, latestVersion));
+            prompt.alert(Prompt.Level.WARNING, "Music Bot by kokofixcomputers Version", String.format(NEW_VERSION_AVAILABLE, version, latestVersion));
         }
     }
     
@@ -222,9 +222,9 @@ public class OtherUtil
             return "The bot is verified. Using JMusicBot in a verified bot is not supported.";
 
         ApplicationInfo info = jda.retrieveApplicationInfo().complete();
-        if (info.isBotPublic())
-            return "\"Public Bot\" is enabled. Using JMusicBot as a public bot is not supported. Please disable it in the "
-                    + "Developer Dashboard at https://discord.com/developers/applications/" + jda.getSelfUser().getId() + "/bot.";
+        //if (info.isBotPublic())
+        //    return "\"Public Bot\" is enabled. Using JMusicBot as a public bot is not supported. Please disable it in the "
+        //            + "Developer Dashboard at https://discord.com/developers/applications/" + jda.getSelfUser().getId() + "/bot.";
 
         return null;
     }

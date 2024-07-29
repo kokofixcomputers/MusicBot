@@ -120,7 +120,7 @@ public class Listener extends ListenerAdapter
         if(bot.getConfig().getDBots())
             return;
         jda.getTextChannelById(119222314964353025L)
-                .sendMessage("This account is running JMusicBot. Please do not list bot clones on this server, <@"+bot.getConfig().getOwnerId()+">.").complete();
+                .sendMessage("This account is running music bot by kokofixcomputers. Please do not list bot clones on this server, <@"+bot.getConfig().getOwnerId()+">.").complete();
         dbots.leave().queue();
     }
 }
