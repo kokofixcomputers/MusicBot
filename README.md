@@ -13,6 +13,8 @@
 
 A cross-platform Discord music bot with a clean interface, and that is easy to set up and run yourself!
 
+for compiling instructions, please visit wiki
+
 [![Setup](http://i.imgur.com/VvXYp5j.png)](https://jmusicbot.com/setup)
 
 ## Features
