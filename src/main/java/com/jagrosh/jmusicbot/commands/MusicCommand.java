@@ -89,7 +89,7 @@ public abstract class MusicCommand extends Command
                 }
                 catch(PermissionException ex) 
                 {
-                    event.reply(event.getClient().getError()+" I am unable to connect to "+userState.getChannel().getAsMention()+"!");
+                    event.reply(event.getClient().getError()+" Cannot connect to "+userState.getChannel().getAsMention()+"! Please check permissions!");
                     return;
                 }
             }
