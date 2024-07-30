@@ -44,7 +44,7 @@ public class BotConfig
             evalEngine;
     private boolean stayInChannel, songInGame, npImages, updatealerts, useEval, dbots;
     private long owner, maxSeconds, aloneTimeUntilStop;
-    private int maxYTPlaylistPages;
+    private int maxYTPlaylistPages, NoOfSearchResults;
     private double skipratio;
     private OnlineStatus status;
     private Activity game;
@@ -88,6 +88,7 @@ public class BotConfig
             songInGame = config.getBoolean("songinstatus");
             npImages = config.getBoolean("npimages");
             updatealerts = config.getBoolean("updatealerts");
+            NoOfSearchResults = config.getInt("NoOfSearchResults");
             logLevel = config.getString("loglevel");
             useEval = config.getBoolean("eval");
             evalEngine = config.getString("evalengine");
@@ -311,6 +312,11 @@ public class BotConfig
     public boolean getDBots()
     {
         return dbots;
+    }
+    
+    public int NoOfSearchResults() 
+    {
+        return NoOfSearchResults;
     }
     
     public boolean useUpdateAlerts()
